@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="formValidation.js"></script>
+        <title>Basic Form Validation w/ HTML/CSS/JS</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <form class="form" autocomplete="off" onsubmit="validateForm()">
+                <!-- Username Field -->
+                <section class="username">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="ex. JohnDoe123"
+                        autocomplete="off"
+                    />
+                </section>
+
+                <!-- Password Field -->
+                <section class="password">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="******"
+                    />
+                </section>
+
+                <!-- Submit Field -->
+                <section class="submit">
+                    <button type="submit">Sign Up</button>
+                    <a href="/Basic-Form-Validation/index.html">Log In</a>
+                </section>
+            </form>
+        </div>
+    </body>
+</html>
